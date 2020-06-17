@@ -1,0 +1,7 @@
+{
+	"item": [
+		{"name": "Login"},
+		{"name": "Register"},
+		{"name": "User Details"},
+		{"name": "WalletPay"}]
+}
