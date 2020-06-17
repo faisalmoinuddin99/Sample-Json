@@ -1,0 +1,1051 @@
+{
+	"info": {
+		"_postman_id": "41fd2026-8461-4415-b244-3490ec86e124",
+		"name": "Giro-Wallet-Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "me@atik.in",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/login",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "FirstName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "MiddleName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Mobile",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Referral",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/register",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EKYC Document List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiJiZmY0MjJiYzZjZjg5MzdjOWI0NjRhZjE0MjJmMzIwMGExNTQ0NzlmNjI2NWU3NTdmM2UwNTBkMjYxMGU5OThjOWE0ZjFkMTdjM2UwYTJlZSIsImlhdCI6MTU5MTQyMzU1NywibmJmIjoxNTkxNDIzNTU3LCJleHAiOjE2MDcyMzQ3NTcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.qW4CELHgWfR3b9Uj3jBIOdKDRP3cPdmMjuaHaz7KMsRVt18LEGsrWoxdKR7oGZOH8Po23avM3DulNsSMBwnmLLZo5yif83gW1Cvh-HSqHWHq0U1Vn3aFOR7engExekYkHcdIrjOb98yXAx9eVBDc8zOLJ-byNL32MRG7JujW9ltdcVdnaic-M_TYKjir6lHI3VJAXoIH_jOUgx1RR6DLJSDuqJauaG2U65L6NmamysUrdDNElWYF2DdaEtVauTt30Z7WBs1z-zeMwzxdJ3ZsaXRRHZXeCUizWsAT0av74MKcOB2pgRgs2NX3x58z1Dj7qM9LG-PBEjtE73kXShePSlDVGuvG1yZjO1XDTJCrFv06W9mP7CmDyQkGpt6qFfyByDk6IXc7P-GkGYKDBZz-WQ521CtR5CzRpvpQOQh8yRX19jv49RcefyITB6FiNUQ70Rh0kI0YDgdu5yY_N5QE-w6EX2JGLre3On4fdk_VKPYxE1NV7D4l20X7nnSfk07FY8RnJ4H7dYVt1XREQMQtHfUZfg2PSMOXDoEO4zDKIuDqFGMM1x5RYgCat5hE6P55UB0vq2-8dLWdqW0lokKJzBYTPvp7Mq6NKGC5eQ5ExydUOyUFfn7MZQhvCEhkHNavtpLRTtb3HvM8jodXf6jRZqR4jECgKDCr1QfORs2WPuE"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/documents",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EKYC Document Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiJiZmY0MjJiYzZjZjg5MzdjOWI0NjRhZjE0MjJmMzIwMGExNTQ0NzlmNjI2NWU3NTdmM2UwNTBkMjYxMGU5OThjOWE0ZjFkMTdjM2UwYTJlZSIsImlhdCI6MTU5MTQyMzU1NywibmJmIjoxNTkxNDIzNTU3LCJleHAiOjE2MDcyMzQ3NTcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.qW4CELHgWfR3b9Uj3jBIOdKDRP3cPdmMjuaHaz7KMsRVt18LEGsrWoxdKR7oGZOH8Po23avM3DulNsSMBwnmLLZo5yif83gW1Cvh-HSqHWHq0U1Vn3aFOR7engExekYkHcdIrjOb98yXAx9eVBDc8zOLJ-byNL32MRG7JujW9ltdcVdnaic-M_TYKjir6lHI3VJAXoIH_jOUgx1RR6DLJSDuqJauaG2U65L6NmamysUrdDNElWYF2DdaEtVauTt30Z7WBs1z-zeMwzxdJ3ZsaXRRHZXeCUizWsAT0av74MKcOB2pgRgs2NX3x58z1Dj7qM9LG-PBEjtE73kXShePSlDVGuvG1yZjO1XDTJCrFv06W9mP7CmDyQkGpt6qFfyByDk6IXc7P-GkGYKDBZz-WQ521CtR5CzRpvpQOQh8yRX19jv49RcefyITB6FiNUQ70Rh0kI0YDgdu5yY_N5QE-w6EX2JGLre3On4fdk_VKPYxE1NV7D4l20X7nnSfk07FY8RnJ4H7dYVt1XREQMQtHfUZfg2PSMOXDoEO4zDKIuDqFGMM1x5RYgCat5hE6P55UB0vq2-8dLWdqW0lokKJzBYTPvp7Mq6NKGC5eQ5ExydUOyUFfn7MZQhvCEhkHNavtpLRTtb3HvM8jodXf6jRZqR4jECgKDCr1QfORs2WPuE"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ekyc_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ekyc_document",
+							"type": "file",
+							"src": "/C:/Users/Atik Khan/Downloads/8153.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/documents",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfilePicture",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiJiZmY0MjJiYzZjZjg5MzdjOWI0NjRhZjE0MjJmMzIwMGExNTQ0NzlmNjI2NWU3NTdmM2UwNTBkMjYxMGU5OThjOWE0ZjFkMTdjM2UwYTJlZSIsImlhdCI6MTU5MTQyMzU1NywibmJmIjoxNTkxNDIzNTU3LCJleHAiOjE2MDcyMzQ3NTcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.qW4CELHgWfR3b9Uj3jBIOdKDRP3cPdmMjuaHaz7KMsRVt18LEGsrWoxdKR7oGZOH8Po23avM3DulNsSMBwnmLLZo5yif83gW1Cvh-HSqHWHq0U1Vn3aFOR7engExekYkHcdIrjOb98yXAx9eVBDc8zOLJ-byNL32MRG7JujW9ltdcVdnaic-M_TYKjir6lHI3VJAXoIH_jOUgx1RR6DLJSDuqJauaG2U65L6NmamysUrdDNElWYF2DdaEtVauTt30Z7WBs1z-zeMwzxdJ3ZsaXRRHZXeCUizWsAT0av74MKcOB2pgRgs2NX3x58z1Dj7qM9LG-PBEjtE73kXShePSlDVGuvG1yZjO1XDTJCrFv06W9mP7CmDyQkGpt6qFfyByDk6IXc7P-GkGYKDBZz-WQ521CtR5CzRpvpQOQh8yRX19jv49RcefyITB6FiNUQ70Rh0kI0YDgdu5yY_N5QE-w6EX2JGLre3On4fdk_VKPYxE1NV7D4l20X7nnSfk07FY8RnJ4H7dYVt1XREQMQtHfUZfg2PSMOXDoEO4zDKIuDqFGMM1x5RYgCat5hE6P55UB0vq2-8dLWdqW0lokKJzBYTPvp7Mq6NKGC5eQ5ExydUOyUFfn7MZQhvCEhkHNavtpLRTtb3HvM8jodXf6jRZqR4jECgKDCr1QfORs2WPuE"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userimage",
+							"type": "file",
+							"src": "/C:/Users/Atik Khan/Downloads/images.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/profile",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMoney",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3MGJjMDdhYzAzYjEzNTQ1NmM2NjYwMzZkYzAyMWJkZjhlNzBlZDY4ZWNhYjkwZTFmYjU4MTkzZjYyZDQwMjZjOWNkYjJiY2RmZDA0MjEzMiIsImlhdCI6MTU5MDIyOTE0NCwibmJmIjoxNTkwMjI5MTQ0LCJleHAiOjE2MDYxMjY3NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.FfLvyRA1ElyZsynC-CzGpOjPelc3mG4D08FGeL2kD9Q5nYFortMEPP9dgGOnPKRBdYSsH6tR2bFjXi1sIKP926SD8SSJz2P_HBT_ry8Bh8IrUx6l7zG7xzLVxTjo25W8j8_xZOzSiN5zlD8H2mna8CS9kKJfWvBxt_tDIutC2p88FG0P72J0QZdC796yK0h0xLu_VM9LgVTnRzKB8K0z4l49oUrEMdzHzuKOKaUH5w9zkN5_gBVCEDdhvC9KBfW8Rbb1Q_DqiMhb1Y3nsBlCAYPv5L0o32R2bjG0OVqcbe3GkPq7dsJuFnMfRhpC7Xfice30RcGb6Md7vToP0Usx2tckZYLPtQIFWbuJk3vr1W8VKLRZon5tdQSIrZRA6fpD9_QcmR-e9vkW9urtEC2--A0LzlljykxgmPucS4246chZxVkkCTlsd68Ek-O991oG7aO0y0bhZCkexpNp9upD6A1z1YJvdxCcQ4VqdBU3b1QpGxxYV309K-YbvCRqDB1bbMdRZGUjDO4kd0TO5eQ5eQ_stI0IfYWAev2LbnZ5dnjVliL0cnaXfzv5_lO5tecupEqoufGvDbnmnGNsm6C-Rrrwj9wbZvuawE2njM4T7qP58KiH0H4R_EuvxE4WXjuGLlfSSfeG7NWB6WMV05VvtVTgo89AKImNQTTgiTOdfdg"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "url",
+							"value": "http://localhost/ccavenue/ccavResponseHandler.php",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "4500",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/addmoney",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"addmoney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMoneyResponse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3MGJjMDdhYzAzYjEzNTQ1NmM2NjYwMzZkYzAyMWJkZjhlNzBlZDY4ZWNhYjkwZTFmYjU4MTkzZjYyZDQwMjZjOWNkYjJiY2RmZDA0MjEzMiIsImlhdCI6MTU5MDIyOTE0NCwibmJmIjoxNTkwMjI5MTQ0LCJleHAiOjE2MDYxMjY3NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.FfLvyRA1ElyZsynC-CzGpOjPelc3mG4D08FGeL2kD9Q5nYFortMEPP9dgGOnPKRBdYSsH6tR2bFjXi1sIKP926SD8SSJz2P_HBT_ry8Bh8IrUx6l7zG7xzLVxTjo25W8j8_xZOzSiN5zlD8H2mna8CS9kKJfWvBxt_tDIutC2p88FG0P72J0QZdC796yK0h0xLu_VM9LgVTnRzKB8K0z4l49oUrEMdzHzuKOKaUH5w9zkN5_gBVCEDdhvC9KBfW8Rbb1Q_DqiMhb1Y3nsBlCAYPv5L0o32R2bjG0OVqcbe3GkPq7dsJuFnMfRhpC7Xfice30RcGb6Md7vToP0Usx2tckZYLPtQIFWbuJk3vr1W8VKLRZon5tdQSIrZRA6fpD9_QcmR-e9vkW9urtEC2--A0LzlljykxgmPucS4246chZxVkkCTlsd68Ek-O991oG7aO0y0bhZCkexpNp9upD6A1z1YJvdxCcQ4VqdBU3b1QpGxxYV309K-YbvCRqDB1bbMdRZGUjDO4kd0TO5eQ5eQ_stI0IfYWAev2LbnZ5dnjVliL0cnaXfzv5_lO5tecupEqoufGvDbnmnGNsm6C-Rrrwj9wbZvuawE2njM4T7qP58KiH0H4R_EuvxE4WXjuGLlfSSfeG7NWB6WMV05VvtVTgo89AKImNQTTgiTOdfdg"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "url",
+							"value": "660271967c2bffbd791b3ab4d5f1fa8d9afff153e0e36575408d2db3e1cf6a815964470b50704875743307fbbcc5397bf7306eda33aaeb0313ca423cea73683534c76a5276b27db060c4b63354a9e4cfb96fdb7c7213b0472a77a5caa27f8b3bb9078c0e2bf149219e4ac2c951b761b3584229fcc5a124ad2bc3029261de0802e026d45608e1447d5f6838277a640fdeb939f40d80f943412f6e995112e51d23a22fb388824583a150c92a4e5499c3001fab1f18d31bef55d757c180e55e9750cf3bb96d06f3ea65b02361a6409efc9bae10d43c4c88ddf16e966edbd94b2538faa11d7dba83aa1f08c5d0ca2a7e7d7525c56b34072af31e5c44b02fb3e5e568eb338d3a5a4d6bc9c3edac2149e29e8813b84c110adee4846609f6a69420f8560c0caab4f3b73ff64b0e9396574cd9001fc8d4801c8e919c4527d505b3a0e6d8a9a67f59b6ee525bccd9d99ef7aa6904f4c81f340943914ef5f249a5e3a1b499c35bcaeb3c050802f809455fbc7e751505987402bb8028c14c089984be07ed3a2d6edd7d8caf669f6984904d47184d74edfeb30cd43641947568666101c5da52e956881a6b491d85e00d5320c9d440f2d6a99e16ef36776c66da1306ddbb1c5197406f7f1deb1d1ae2898abbbb39ffaa93cc7b072359c77b806de526d90acdf78d35992d78b2d501bdb153eb0506452dc085bd9ccb265436611c4027a6fc0284cbd58f933afe935210b3af25347c6c0649d70cd1688490fa5370c2b90d308fbef5acffae042e2ffb70c57b6cc170b4bc080121ec046ea0c0dadeb95b936ef28c1b9396cb4bb17c54eed29c32826637a01f97ad0f296a6b78e9eb398931bece865303f98b8429576ee20f82e69f13c8cebc49c6bf9a7a1adadf9e5c6fbd9004f0e6a12be5c285d01ce4c6a4ef5896c549b33e65529c4077df6eb819df887742c3790839329053fc0fdd66539a10c5b40058e6ffa771f83f5caf7739035381ec0607cde87f76a783d56cc44b10c94992d4e1e0ec3d5a23df9e7fbf05480f8a0852e2a0f150190d0079c660a347758f5fb65be0a2a4cc910f23525f8a8117ff72fac49d32dbfaa425cdc299cfc3b205c984\n",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/addmoneyresponse",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"addmoneyresponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3MGJjMDdhYzAzYjEzNTQ1NmM2NjYwMzZkYzAyMWJkZjhlNzBlZDY4ZWNhYjkwZTFmYjU4MTkzZjYyZDQwMjZjOWNkYjJiY2RmZDA0MjEzMiIsImlhdCI6MTU5MDIyOTE0NCwibmJmIjoxNTkwMjI5MTQ0LCJleHAiOjE2MDYxMjY3NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.FfLvyRA1ElyZsynC-CzGpOjPelc3mG4D08FGeL2kD9Q5nYFortMEPP9dgGOnPKRBdYSsH6tR2bFjXi1sIKP926SD8SSJz2P_HBT_ry8Bh8IrUx6l7zG7xzLVxTjo25W8j8_xZOzSiN5zlD8H2mna8CS9kKJfWvBxt_tDIutC2p88FG0P72J0QZdC796yK0h0xLu_VM9LgVTnRzKB8K0z4l49oUrEMdzHzuKOKaUH5w9zkN5_gBVCEDdhvC9KBfW8Rbb1Q_DqiMhb1Y3nsBlCAYPv5L0o32R2bjG0OVqcbe3GkPq7dsJuFnMfRhpC7Xfice30RcGb6Md7vToP0Usx2tckZYLPtQIFWbuJk3vr1W8VKLRZon5tdQSIrZRA6fpD9_QcmR-e9vkW9urtEC2--A0LzlljykxgmPucS4246chZxVkkCTlsd68Ek-O991oG7aO0y0bhZCkexpNp9upD6A1z1YJvdxCcQ4VqdBU3b1QpGxxYV309K-YbvCRqDB1bbMdRZGUjDO4kd0TO5eQ5eQ_stI0IfYWAev2LbnZ5dnjVliL0cnaXfzv5_lO5tecupEqoufGvDbnmnGNsm6C-Rrrwj9wbZvuawE2njM4T7qP58KiH0H4R_EuvxE4WXjuGLlfSSfeG7NWB6WMV05VvtVTgo89AKImNQTTgiTOdfdg"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/user",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WalletPay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3NTdkNDBlZGY3ZDY3OTFlZmZjYTU0OTU3ZDYyMGM4ZGI0ZmZiODBkZTUzMjhjZmE2MjVkYTQxNjk2Nzk5NGViNzVlOTlhOWVkNGFhZmM0YSIsImlhdCI6MTU4OTg4MjQxMiwibmJmIjoxNTg5ODgyNDEyLCJleHAiOjE2MDU3ODAwMTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gxlUADs1K2NyH3fIlxbvNpPPUA-6RIlWS4fJBaylbss-hvvwDEfAtutkS9WcG-fs6pCjnWTnugaxVW80K2aW0UZhjCmpDA-IVn6JqHbdtfBKfm1CqNw8atNtKBqwmcYZ9gDX2nXRNcqFs0udvbkrVAIOBRs_uLuinmLMKj4z8z7_-5gUp8NgkichVX-1ANAwvyK5Qvi98DOeN7ug9E6kXR613a13NdxHxT1PwYePCl5981Vwp8kOwq3KJOkSX67HSz9BWnwHphCXikuk8iS2bI3VAbI7o7ej7yEpajwlGVs99U_6CkD_lOU8rjVDJr_7kWE2IT3w_lwFkSTDF7G7OQqFaa2zuWJ76-bCQ1dGeY7zE4ctt03IWd1SJjMRyD6_bJwVMBdM_uw9hymb6Pdf8cZyeyj5HiBBtia6g80VAl4PBnmh7Bcb83ibTGpEK2z_aTiLQyrPqJo7mNuGRN0DU4RfkdK3X6wVmGcQCaaM5OxM7Xxr53pQG3yZooYnPEGlFJhuuxvOvZ7vvKzcgrEqLUdR7t4OLRPfCs7qLOTImWaS8ym0vgEQHHi2yERbb-ADajsxC__9ua3lIUwYZsdMd3fQfjW0j_3XpWvH_QYK5VeTIhHhClv-1B2WAgI-W2S-TZigSRdY4IlakxDynWgXFUCxyCJFq17WDjUoB50ioyc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Mobile",
+							"value": "7016669877",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/pay",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WalletTransaction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3NTdkNDBlZGY3ZDY3OTFlZmZjYTU0OTU3ZDYyMGM4ZGI0ZmZiODBkZTUzMjhjZmE2MjVkYTQxNjk2Nzk5NGViNzVlOTlhOWVkNGFhZmM0YSIsImlhdCI6MTU4OTg4MjQxMiwibmJmIjoxNTg5ODgyNDEyLCJleHAiOjE2MDU3ODAwMTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gxlUADs1K2NyH3fIlxbvNpPPUA-6RIlWS4fJBaylbss-hvvwDEfAtutkS9WcG-fs6pCjnWTnugaxVW80K2aW0UZhjCmpDA-IVn6JqHbdtfBKfm1CqNw8atNtKBqwmcYZ9gDX2nXRNcqFs0udvbkrVAIOBRs_uLuinmLMKj4z8z7_-5gUp8NgkichVX-1ANAwvyK5Qvi98DOeN7ug9E6kXR613a13NdxHxT1PwYePCl5981Vwp8kOwq3KJOkSX67HSz9BWnwHphCXikuk8iS2bI3VAbI7o7ej7yEpajwlGVs99U_6CkD_lOU8rjVDJr_7kWE2IT3w_lwFkSTDF7G7OQqFaa2zuWJ76-bCQ1dGeY7zE4ctt03IWd1SJjMRyD6_bJwVMBdM_uw9hymb6Pdf8cZyeyj5HiBBtia6g80VAl4PBnmh7Bcb83ibTGpEK2z_aTiLQyrPqJo7mNuGRN0DU4RfkdK3X6wVmGcQCaaM5OxM7Xxr53pQG3yZooYnPEGlFJhuuxvOvZ7vvKzcgrEqLUdR7t4OLRPfCs7qLOTImWaS8ym0vgEQHHi2yERbb-ADajsxC__9ua3lIUwYZsdMd3fQfjW0j_3XpWvH_QYK5VeTIhHhClv-1B2WAgI-W2S-TZigSRdY4IlakxDynWgXFUCxyCJFq17WDjUoB50ioyc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/transaction",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittanceISO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiIzMDZmNDYzOWQ4YzkxZmRmN2VjMmVhMGZmNTZkNWU5MDUyNjUxNDM2MjFmZWYwNGY3ZDY2OGExZjRiMGRmM2UzNWEwZDExY2JmNWRiMDg1MyIsImlhdCI6MTU4OTg4NDYzNywibmJmIjoxNTg5ODg0NjM3LCJleHAiOjE2MDU3ODIyMzcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.wQL6JCKsuOCZpReOLIMLnQliD7IzOWhl316CuAeF2UuL0QcgSPDoyZnsgbGCJpidG1dNZCFZbADwaEl9dLKgDDXJ5M4UqRN_BkTYxd1t16IhHwJpEl6hFLRcAQkmhozwAhYTUTbVPU4f8jR7yVpWio67JUpJHAKLDr8m5yfNnrLSDgyW5i34B17Gf_jB6LY_q4NWE9rsd36qWqrdRIOQHnvL-CCCM5Bhr-JM2yi93vFb_p8-iQoUQWU5anBlqcAuTGgOGaN5uaewJSmHQz2J5wmO9p5VpuyjRCw-r39kkQdyKFcG_G_kPr19faMxswrtIJKQtFnrlD3a6ysMbAuVJ4Iw8KKM_yFf_mOqsN7qI45o3DN8UUXRmK9-iUlbonnsLuZ1PNOdZNrITqQCGbKN0sJq4ihsD777Gy5njLh4TXtPzbBqglhU_SijvAYZ445hOS4CgJ_ny1GGzhHZXt2JGW334GCVGjBVFHJpUmgOjzEz_v_1IMsa83QlYWEgM-aJDgsCnCUUeKXrX3j9FGfRSsSa0dV8oixdq6WTx6H-kPxAGUUGBuwU-AORkWI-j9OyipVG70KH6GCXvjWJkjDZclvWFGNZFT6IsaZr3rgBavz7W2jFuz07Z2GQb7mJOXQusLYPRRiLIcv1tQqn7y1eWbB93T2Css25MpKsr3_Nr_Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/isos",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"isos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiIzMDZmNDYzOWQ4YzkxZmRmN2VjMmVhMGZmNTZkNWU5MDUyNjUxNDM2MjFmZWYwNGY3ZDY2OGExZjRiMGRmM2UzNWEwZDExY2JmNWRiMDg1MyIsImlhdCI6MTU4OTg4NDYzNywibmJmIjoxNTg5ODg0NjM3LCJleHAiOjE2MDU3ODIyMzcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.wQL6JCKsuOCZpReOLIMLnQliD7IzOWhl316CuAeF2UuL0QcgSPDoyZnsgbGCJpidG1dNZCFZbADwaEl9dLKgDDXJ5M4UqRN_BkTYxd1t16IhHwJpEl6hFLRcAQkmhozwAhYTUTbVPU4f8jR7yVpWio67JUpJHAKLDr8m5yfNnrLSDgyW5i34B17Gf_jB6LY_q4NWE9rsd36qWqrdRIOQHnvL-CCCM5Bhr-JM2yi93vFb_p8-iQoUQWU5anBlqcAuTGgOGaN5uaewJSmHQz2J5wmO9p5VpuyjRCw-r39kkQdyKFcG_G_kPr19faMxswrtIJKQtFnrlD3a6ysMbAuVJ4Iw8KKM_yFf_mOqsN7qI45o3DN8UUXRmK9-iUlbonnsLuZ1PNOdZNrITqQCGbKN0sJq4ihsD777Gy5njLh4TXtPzbBqglhU_SijvAYZ445hOS4CgJ_ny1GGzhHZXt2JGW334GCVGjBVFHJpUmgOjzEz_v_1IMsa83QlYWEgM-aJDgsCnCUUeKXrX3j9FGfRSsSa0dV8oixdq6WTx6H-kPxAGUUGBuwU-AORkWI-j9OyipVG70KH6GCXvjWJkjDZclvWFGNZFT6IsaZr3rgBavz7W2jFuz07Z2GQb7mJOXQusLYPRRiLIcv1tQqn7y1eWbB93T2Css25MpKsr3_Nr_Q"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ISO",
+							"value": "ind",
+							"description": "Country ISO Code",
+							"type": "text"
+						},
+						{
+							"key": "Service",
+							"value": "BankAccount",
+							"description": "MobileWallet, BankAccount & CashPickup",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/payers",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"payers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayers Fees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiIzMjk2YzRhZTczNGIwZjY2MThjNTM0OWFkOTU2ZjIwY2MzNzI4NjU4NjM5Mjg5OWFmNjI5ZmRiODYzYjU0YTI4MmY1MGFmNDVlZjFkMjRlMCIsImlhdCI6MTU4OTg4NDk1NSwibmJmIjoxNTg5ODg0OTU1LCJleHAiOjE2MDU3ODI1NTUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.ljjUwH-uXNt43---XH83en0rHlW-QO0FQtqqQBYXczjlihNO-WnJ-hyzHOycZ_bD7ssFCZ3XXeuUYOICyUkw83SgHkoZxG6AkjFW2athMb-n2NdVjkrb1Ppf9lZ5X_2vvef6PCsIOGI5LwHMKvH_QeVfckQIlPUeBmHp0AsSiw2d0ZaA_v1jLPdhjxf875mNQVCxF8yQdGVsrqHFSKAFfoqIrfk2953bGX-4w9gEqyvR2KLCnyIcRTRRkIPmwup2tYgq1XgHvjZokb-eYQfb5kEh2eglh87cK7ru-jvnAlIfV_EHA6ucxi3NMkJ-X9BS0z8rsmnqMO8XSgO3gW51LuoZQQQR4TJBSuEsIsieX9NhNp8gXArOREVZ_9GllZTIyJHEa9worTinDEDgGrbkHO8TmC_Zk9CZJTZk2O-HMhEqCukDI6LfJ8Fbn4X4XYwHjtIqQ2HOT3Q0w15cmnD263HvXzqhBZIgebynpNcNkZT-08fDxdZdhFhSYG0T_B8YzuX7wzNxfO8JakfL6jFKJdwH3BzuX21jSd5h7N9WSE-akOv9a-TcvziMCrLLGue7Ej_A1DIaNb4kpZca7yPX2nh--VRglfVm0xa0TY23F3qB-AsMVLfPC6P5Y-Ju1cxElHqMMKkhuKmGHHGG42T-t09nNAtTsSSOQkeh04_OP04"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Payer",
+							"value": "406",
+							"description": "Payer ID",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/payerrate",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"payerrate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayers Live Rate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3MGY1NzA5YjRkMmEwZDc5M2Y1NGJjMzgyYWRkMjc5MDI2MGUzMzcyZDAxODkxMWU2NTQxYzA0MzAyMmM4YWIwNjFjOTQ3ODM1ZjhmODE5MyIsImlhdCI6MTU4OTg4NTAzNCwibmJmIjoxNTg5ODg1MDM0LCJleHAiOjE2MDU3ODI2MzMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.EqP073eIBkuPY5_q1pDut3tdVt_4MBodpRWJwDVRsiC4NhTrEJoYJzLRrEfQ6Gwp9LSMC-k5SFSkL99jVhoF46D6yjYnfFiCW_Qyz038QWkY1Cw6f-5h9eAMKSXh4FD-aTKC9e5rkkTXGZP62Ye0YZdUgMKLVcCuJNPmc5j6qVrcsnR4yusGjUGnLXB2LPnZbKs4g214IS7MCX1xr4ez56Auv9sFBDNi5Rep2KfJozMzA9vi4imLjHxEjIqaHygAEEeu9woXrp9rL9xLov9iyhqoOf045cbIoifHFsAAvVWQMC2UZZPH84OPLB_YYHBeM2e9l5vehQ57x7OBJB256iFB2MHbV_J-FdB9HhkE-WixI5jtGAp7ucgKp9p2Ile3UsZLreAKKvy6I1rqNmK1OXiDw9PTTJVHpweOSVcDMD91urirewqNTxSlrfEKUkj5s13DkzJ0Qakdkar523F0G-hZfTZh1uTAeKF8aqeXLFAe3S_5EusKY9VFXPi2Fe4QpixmuoD22xctpfPvtPqFDTvHV-_aDh42XQ0lUR39AWrZjYODEEE1kBQ8YFqhdWlB7J57eZneoyN4uD931Nhwxqx6gyRr10eFxSCx9UeIB_ztDNG4Kzncg85UtDPhI0ZVCrnNzHNw3p6nTN5dDLVL2e5k5XcdmApWGVokhXv5EnU"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Payer",
+							"value": "406",
+							"description": "Payer ID",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "100",
+							"description": "Amount to be credited",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/liverate",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"liverate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayWallet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI3MGY1NzA5YjRkMmEwZDc5M2Y1NGJjMzgyYWRkMjc5MDI2MGUzMzcyZDAxODkxMWU2NTQxYzA0MzAyMmM4YWIwNjFjOTQ3ODM1ZjhmODE5MyIsImlhdCI6MTU4OTg4NTAzNCwibmJmIjoxNTg5ODg1MDM0LCJleHAiOjE2MDU3ODI2MzMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.EqP073eIBkuPY5_q1pDut3tdVt_4MBodpRWJwDVRsiC4NhTrEJoYJzLRrEfQ6Gwp9LSMC-k5SFSkL99jVhoF46D6yjYnfFiCW_Qyz038QWkY1Cw6f-5h9eAMKSXh4FD-aTKC9e5rkkTXGZP62Ye0YZdUgMKLVcCuJNPmc5j6qVrcsnR4yusGjUGnLXB2LPnZbKs4g214IS7MCX1xr4ez56Auv9sFBDNi5Rep2KfJozMzA9vi4imLjHxEjIqaHygAEEeu9woXrp9rL9xLov9iyhqoOf045cbIoifHFsAAvVWQMC2UZZPH84OPLB_YYHBeM2e9l5vehQ57x7OBJB256iFB2MHbV_J-FdB9HhkE-WixI5jtGAp7ucgKp9p2Ile3UsZLreAKKvy6I1rqNmK1OXiDw9PTTJVHpweOSVcDMD91urirewqNTxSlrfEKUkj5s13DkzJ0Qakdkar523F0G-hZfTZh1uTAeKF8aqeXLFAe3S_5EusKY9VFXPi2Fe4QpixmuoD22xctpfPvtPqFDTvHV-_aDh42XQ0lUR39AWrZjYODEEE1kBQ8YFqhdWlB7J57eZneoyN4uD931Nhwxqx6gyRr10eFxSCx9UeIB_ztDNG4Kzncg85UtDPhI0ZVCrnNzHNw3p6nTN5dDLVL2e5k5XcdmApWGVokhXv5EnU"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Payer",
+							"value": "369",
+							"description": "Payer ID",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "100",
+							"description": "Amount to be credited",
+							"type": "text"
+						},
+						{
+							"key": "FirstName",
+							"value": "Atik",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Khan",
+							"type": "text"
+						},
+						{
+							"key": "Mobile",
+							"value": "8866885373",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/paywallet",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"paywallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayBank",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MGFiOGY4NC1mYjEwLTRmMzctODBmYi02MGE4ODI2OWZmMGQiLCJqdGkiOiJlNGMxZDYyNWFhMmEyNjk5M2ZlZDM5YWRjOTAzYWM5NDgxMjA3MjBhZDE5ZWUzZDE0NDBiOTM1MGY1MjJhYjdhNjA1Zjg2NDU5NmU2NDgwMiIsImlhdCI6MTU5MDY2NTIzMiwibmJmIjoxNTkwNjY1MjMyLCJleHAiOjE2MDY1NjI4MzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.D28DN6BjtXuqqtV__6m6nGV0Ovke_hxtQyjZTE6-Tmdt2NL6Wl6d5ayXAG8Bx1boB8icu3il-rjo1xNYrTX8oRSBq2t__-BGQkiY4qG9SlAh4REHG0rY00iXc5t0DNZZPS-hH1t9kRTSZ7pfLc6QZR7IIFkMFSpO-uYTX880_SIYkFwPnuCGkZNtFdnM-00g97n55Ctt8FdWFyCwmBxRRPNkNeSPECQEX8IumavZ1nl-_zDiSfwzaoDNpcFOFZUHt-iQYU0H_d7Qv_wyvT2ejPoqO8pSF4pwYNL5vZVbxrzgIhy9z3H5Gdnn3wRGMI_DJKlGKEYc7qI8Qw2rGPRXNWMuto_vLcXt5OksBnagG6NTEl1wDfz8LKUX4YWuntrXVtDxk2qPYsXWoTSNWOgvjpZnVi3q8xj7fx2n9OBBwzn7hcfqGlK1qnkS8JcdvNwJcN3WECB8_DbtgnxaLaiBZUVQCIlFUaWRlhXTkmtuWq2IaBzkQyoS3MpdmFJDYu2vCOSIP018xzbPCNZASMuEOgwpsZztNZ5tEl8KWcmBD8s213eG3Hp0RkmGglV39sN5c8-fOvJVAvFxto7Y2yqOmsOoSHMbdwkdlLLJ2qFPa_igi6v5XTWy2THV4XMA9_krGeEp86LycsUyZJJHhvuCG_zhign3IKjqR36qtCV4-VA"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Payer",
+							"value": "406",
+							"description": "Payer ID",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "100",
+							"description": "Amount to be credited",
+							"type": "text"
+						},
+						{
+							"key": "FirstName",
+							"value": "Atik",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Khan",
+							"type": "text"
+						},
+						{
+							"key": "Mobile",
+							"value": "8866885373",
+							"type": "text"
+						},
+						{
+							"key": "ISO",
+							"value": "IND",
+							"type": "text"
+						},
+						{
+							"key": "Account",
+							"value": "212938100",
+							"type": "text"
+						},
+						{
+							"key": "Branch",
+							"value": "BKID0005050",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/paybank",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"paybank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemittancePayAgent (Cash)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MGFiOGY4NC1mYjEwLTRmMzctODBmYi02MGE4ODI2OWZmMGQiLCJqdGkiOiJlNGMxZDYyNWFhMmEyNjk5M2ZlZDM5YWRjOTAzYWM5NDgxMjA3MjBhZDE5ZWUzZDE0NDBiOTM1MGY1MjJhYjdhNjA1Zjg2NDU5NmU2NDgwMiIsImlhdCI6MTU5MDY2NTIzMiwibmJmIjoxNTkwNjY1MjMyLCJleHAiOjE2MDY1NjI4MzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.D28DN6BjtXuqqtV__6m6nGV0Ovke_hxtQyjZTE6-Tmdt2NL6Wl6d5ayXAG8Bx1boB8icu3il-rjo1xNYrTX8oRSBq2t__-BGQkiY4qG9SlAh4REHG0rY00iXc5t0DNZZPS-hH1t9kRTSZ7pfLc6QZR7IIFkMFSpO-uYTX880_SIYkFwPnuCGkZNtFdnM-00g97n55Ctt8FdWFyCwmBxRRPNkNeSPECQEX8IumavZ1nl-_zDiSfwzaoDNpcFOFZUHt-iQYU0H_d7Qv_wyvT2ejPoqO8pSF4pwYNL5vZVbxrzgIhy9z3H5Gdnn3wRGMI_DJKlGKEYc7qI8Qw2rGPRXNWMuto_vLcXt5OksBnagG6NTEl1wDfz8LKUX4YWuntrXVtDxk2qPYsXWoTSNWOgvjpZnVi3q8xj7fx2n9OBBwzn7hcfqGlK1qnkS8JcdvNwJcN3WECB8_DbtgnxaLaiBZUVQCIlFUaWRlhXTkmtuWq2IaBzkQyoS3MpdmFJDYu2vCOSIP018xzbPCNZASMuEOgwpsZztNZ5tEl8KWcmBD8s213eG3Hp0RkmGglV39sN5c8-fOvJVAvFxto7Y2yqOmsOoSHMbdwkdlLLJ2qFPa_igi6v5XTWy2THV4XMA9_krGeEp86LycsUyZJJHhvuCG_zhign3IKjqR36qtCV4-VA"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Payer",
+							"value": "2008",
+							"description": "Payer ID",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "100",
+							"description": "Amount to be credited",
+							"type": "text"
+						},
+						{
+							"key": "FirstName",
+							"value": "Atik",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Khan",
+							"type": "text"
+						},
+						{
+							"key": "MSISDN",
+							"value": "8866885373",
+							"type": "text"
+						},
+						{
+							"key": "ISO",
+							"value": "IND",
+							"type": "text"
+						},
+						{
+							"key": "Passport",
+							"value": "212938100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/paycash",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"paycash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries & Codes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiJiZmY0MjJiYzZjZjg5MzdjOWI0NjRhZjE0MjJmMzIwMGExNTQ0NzlmNjI2NWU3NTdmM2UwNTBkMjYxMGU5OThjOWE0ZjFkMTdjM2UwYTJlZSIsImlhdCI6MTU5MTQyMzU1NywibmJmIjoxNTkxNDIzNTU3LCJleHAiOjE2MDcyMzQ3NTcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.qW4CELHgWfR3b9Uj3jBIOdKDRP3cPdmMjuaHaz7KMsRVt18LEGsrWoxdKR7oGZOH8Po23avM3DulNsSMBwnmLLZo5yif83gW1Cvh-HSqHWHq0U1Vn3aFOR7engExekYkHcdIrjOb98yXAx9eVBDc8zOLJ-byNL32MRG7JujW9ltdcVdnaic-M_TYKjir6lHI3VJAXoIH_jOUgx1RR6DLJSDuqJauaG2U65L6NmamysUrdDNElWYF2DdaEtVauTt30Z7WBs1z-zeMwzxdJ3ZsaXRRHZXeCUizWsAT0av74MKcOB2pgRgs2NX3x58z1Dj7qM9LG-PBEjtE73kXShePSlDVGuvG1yZjO1XDTJCrFv06W9mP7CmDyQkGpt6qFfyByDk6IXc7P-GkGYKDBZz-WQ521CtR5CzRpvpQOQh8yRX19jv49RcefyITB6FiNUQ70Rh0kI0YDgdu5yY_N5QE-w6EX2JGLre3On4fdk_VKPYxE1NV7D4l20X7nnSfk07FY8RnJ4H7dYVt1XREQMQtHfUZfg2PSMOXDoEO4zDKIuDqFGMM1x5RYgCat5hE6P55UB0vq2-8dLWdqW0lokKJzBYTPvp7Mq6NKGC5eQ5ExydUOyUFfn7MZQhvCEhkHNavtpLRTtb3HvM8jodXf6jRZqR4jECgKDCr1QfORs2WPuE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/countries",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MSISDN Info",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI2MzU2NjIwNGZhYWMyYmM2MDI4ZTA4MmNmZWZmMjk1NDliZmM3NWJiNzE1ODdiNzYzODhmNzYxYWNhNGU3OTVmNzA5NmNlMjQ0MmZjOGI1NCIsImlhdCI6MTU5MDk4Njc1MSwibmJmIjoxNTkwOTg2NzUxLCJleHAiOjE2MDY3OTc5NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.W0mmmO1aixmpfNIkXPVnj8V_0pzUmG9j4EWtSnR96pTY38Dg-1hnK2tSI0y9uHN_Jugfgb0JP21YYAjJTCwQRxTjhHJ2AaqaF227CozgI2T4OSnMqgH2tjN9QmAd3SS32yQ6SfZyPKwlc7LcVyAylOGxiEEowrbFMVdroaAca8iCjsEXiUgTh6AH1UXy5dfWvIke0QneeTiTgee1Vsgsfu0dUJHk0lVBfF4T-ge3y2wjPzN40A3yFT5QK1lh_RqONVxt5QBvBL3y3G5WjD2gJqHbxGxoM8L87NeGrtuYD79vMQMfSumEfc77K1YelrNwqFAbFT0mpCf4SiZoQLOu0mWr_K6xR9gEk5OOt_-1n6WaO38NMdx7wFt4GHEQ2CpLHM8Zpy1irMCQFg0CWaH35v5hns6kHhMZ3j63CJfoWN4OZrQYhN8pd5_xzbhnsr-MiwFglGGwjI7Q2gX7KT30HIopm0l0IaFlt-eUgcEo3bGpoavp9aB7JQwzsXPf-5ukLiAVAmNIzC7oR_1HNl0DZbq9yTxwjL6Oulxe5mXnlyzDhTB5sjm27D0okglmpacsWUXD3o6WnDa2Tjxk6tKay3QqhQm0dZd3sqU8ipum45qvCdInPl6t4uQMCt6vRN6aiJmO4Gg80lraQSI3wJuXIjjJ3wmtj17zyX2s0mnz90M"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Mobile",
+							"value": "971552230623",
+							"description": "Only UAE number",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/msisdninfo",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"msisdninfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MDk1OWM1MS1mNGY2LTQyM2ItODQxOS0wNWY2ZmExOWY3NzYiLCJqdGkiOiI2MzU2NjIwNGZhYWMyYmM2MDI4ZTA4MmNmZWZmMjk1NDliZmM3NWJiNzE1ODdiNzYzODhmNzYxYWNhNGU3OTVmNzA5NmNlMjQ0MmZjOGI1NCIsImlhdCI6MTU5MDk4Njc1MSwibmJmIjoxNTkwOTg2NzUxLCJleHAiOjE2MDY3OTc5NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.W0mmmO1aixmpfNIkXPVnj8V_0pzUmG9j4EWtSnR96pTY38Dg-1hnK2tSI0y9uHN_Jugfgb0JP21YYAjJTCwQRxTjhHJ2AaqaF227CozgI2T4OSnMqgH2tjN9QmAd3SS32yQ6SfZyPKwlc7LcVyAylOGxiEEowrbFMVdroaAca8iCjsEXiUgTh6AH1UXy5dfWvIke0QneeTiTgee1Vsgsfu0dUJHk0lVBfF4T-ge3y2wjPzN40A3yFT5QK1lh_RqONVxt5QBvBL3y3G5WjD2gJqHbxGxoM8L87NeGrtuYD79vMQMfSumEfc77K1YelrNwqFAbFT0mpCf4SiZoQLOu0mWr_K6xR9gEk5OOt_-1n6WaO38NMdx7wFt4GHEQ2CpLHM8Zpy1irMCQFg0CWaH35v5hns6kHhMZ3j63CJfoWN4OZrQYhN8pd5_xzbhnsr-MiwFglGGwjI7Q2gX7KT30HIopm0l0IaFlt-eUgcEo3bGpoavp9aB7JQwzsXPf-5ukLiAVAmNIzC7oR_1HNl0DZbq9yTxwjL6Oulxe5mXnlyzDhTB5sjm27D0okglmpacsWUXD3o6WnDa2Tjxk6tKay3QqhQm0dZd3sqU8ipum45qvCdInPl6t4uQMCt6vRN6aiJmO4Gg80lraQSI3wJuXIjjJ3wmtj17zyX2s0mnz90M"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Mobile",
+							"value": "971552230623",
+							"description": "Only UAE number",
+							"type": "text"
+						},
+						{
+							"key": "Amount",
+							"value": "5",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://demo.girofintech.cf/api/topup",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"girofintech",
+						"cf"
+					],
+					"path": [
+						"api",
+						"topup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
